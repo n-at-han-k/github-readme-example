@@ -37,6 +37,28 @@
 - [Anchor Links](#anchor-links)
 - [Relative Links & Repository Links](#relative-links--repository-links)
 - [Badges & Shields](#badges--shields)
+- [Popular README Widgets & Dynamic Cards](#popular-readme-widgets--dynamic-cards)
+  - [Star History Chart](#star-history-chart)
+  - [GitHub Readme Stats](#github-readme-stats)
+  - [Top Languages Card](#top-languages-card)
+  - [GitHub Repo Card (Pin)](#github-repo-card-pin)
+  - [GitHub Streak Stats](#github-streak-stats)
+  - [GitHub Profile Trophy](#github-profile-trophy)
+  - [GitHub Activity Graph](#github-activity-graph)
+  - [Contribution Snake Animation](#contribution-snake-animation)
+  - [Typing SVG](#typing-svg)
+  - [Capsule Render (Header/Footer Banners)](#capsule-render-headerfooter-banners)
+  - [Skill Icons](#skill-icons)
+  - [Socialify (Project Social Image)](#socialify-project-social-image)
+  - [Repobeats Analytics](#repobeats-analytics)
+  - [Visitor / Profile View Counter](#visitor--profile-view-counter)
+  - [Wakatime Stats](#wakatime-stats)
+  - [GitHub Readme Jokes](#github-readme-jokes)
+  - [GitHub Readme Quotes](#github-readme-quotes)
+  - [GitHub Contributors Image](#github-contributors-image)
+  - [GitHub Metrics (Lowlighter)](#github-metrics-lowlighter)
+  - [Readme Stats Combo (Side by Side)](#readme-stats-combo-side-by-side)
+  - [Full Profile README Example Layout](#full-profile-readme-example-layout)
 - [Table of Contents (Auto-generated)](#table-of-contents-auto-generated)
 - [Comments (Hidden Text)](#comments-hidden-text)
 - [Videos](#videos)
@@ -2272,6 +2294,498 @@ Badges are just images that link to something. Use [shields.io](https://shields.
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+
+---
+
+## Popular README Widgets & Dynamic Cards
+
+These are widely used third-party services that generate dynamic images/SVGs for your README.
+
+### Star History Chart
+
+```markdown
+[![Star History Chart](https://api.star-history.com/svg?repos=facebook/react,vuejs/vue,angular/angular&type=Date)](https://star-history.com/#facebook/react&vuejs/vue&angular/angular&Date)
+```
+
+[![Star History Chart](https://api.star-history.com/svg?repos=facebook/react,vuejs/vue,angular/angular&type=Date)](https://star-history.com/#facebook/react&vuejs/vue&angular/angular&Date)
+
+#### Star History with dark mode support
+
+```markdown
+<a href="https://star-history.com/#facebook/react&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=facebook/react&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=facebook/react&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=facebook/react&type=Date" />
+ </picture>
+</a>
+```
+
+#### Star History timeline variant
+
+```markdown
+[![Star History Chart](https://api.star-history.com/svg?repos=facebook/react&type=Timeline)](https://star-history.com/#facebook/react&Timeline)
+```
+
+### GitHub Readme Stats
+
+From [github-readme-stats](https://github.com/anuraghazra/github-readme-stats):
+
+```markdown
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=octocat&show_icons=true&theme=radical)
+```
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=octocat&show_icons=true&theme=radical)
+
+#### Stats card themes
+
+```markdown
+<!-- Available themes: default, dark, radical, merko, gruvbox, tokyonight, onedark, cobalt, synthwave, highcontrast, dracula, prussian, monokai, vue, vue-dark, shades-of-purple, nightowl, buefy, blue-green, algolia, great-gatsby, darcula, bear, solarized-dark, solarized-light, chartreuse-dark, nord, gotham, material-palenight, graywhite, vision-friendly-dark, ayu-mirage, midnight-purple, calm, flag-india, omni, react, jolly, maroongold, yeblu, blueberry, slateorange, kacho_ga, outrun, ocean_dark, city_lights, github_dark, github_dark_dimmed, discord_old_blurple, aura_dark, panda, noctis_minimus, cobalt2, swift, aura, apprentice, moltack, codeSTACKr, rose_pine, catppuccin_latte, catppuccin_mocha -->
+
+![Default](https://github-readme-stats.vercel.app/api?username=octocat&show_icons=true)
+![Dark](https://github-readme-stats.vercel.app/api?username=octocat&show_icons=true&theme=dark)
+![Tokyonight](https://github-readme-stats.vercel.app/api?username=octocat&show_icons=true&theme=tokyonight)
+![Dracula](https://github-readme-stats.vercel.app/api?username=octocat&show_icons=true&theme=dracula)
+![Nord](https://github-readme-stats.vercel.app/api?username=octocat&show_icons=true&theme=nord)
+```
+
+#### Stats card options
+
+```markdown
+<!-- Hide specific stats -->
+![Stats](https://github-readme-stats.vercel.app/api?username=octocat&hide=contribs,prs)
+
+<!-- Show additional stats -->
+![Stats](https://github-readme-stats.vercel.app/api?username=octocat&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage)
+
+<!-- Show icons -->
+![Stats](https://github-readme-stats.vercel.app/api?username=octocat&show_icons=true)
+
+<!-- Include private contributions -->
+![Stats](https://github-readme-stats.vercel.app/api?username=octocat&count_private=true)
+
+<!-- Custom title -->
+![Stats](https://github-readme-stats.vercel.app/api?username=octocat&custom_title=My%20GitHub%20Stats)
+
+<!-- Hide border -->
+![Stats](https://github-readme-stats.vercel.app/api?username=octocat&hide_border=true)
+
+<!-- Hide rank -->
+![Stats](https://github-readme-stats.vercel.app/api?username=octocat&hide_rank=true)
+
+<!-- Compact layout -->
+![Stats](https://github-readme-stats.vercel.app/api?username=octocat&layout=compact)
+```
+
+### Top Languages Card
+
+```markdown
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=octocat&layout=compact&theme=radical)
+```
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=octocat&layout=compact&theme=radical)
+
+#### Top Languages layouts
+
+```markdown
+<!-- Compact layout -->
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=octocat&layout=compact)
+
+<!-- Donut layout -->
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=octocat&layout=donut)
+
+<!-- Donut vertical layout -->
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=octocat&layout=donut-vertical)
+
+<!-- Pie layout -->
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=octocat&layout=pie)
+
+<!-- Hide specific languages -->
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=octocat&hide=html,css)
+
+<!-- Show more languages -->
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=octocat&langs_count=10)
+```
+
+### GitHub Repo Card (Pin)
+
+```markdown
+[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=facebook&repo=react&theme=radical)](https://github.com/facebook/react)
+```
+
+[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=facebook&repo=react&theme=radical)](https://github.com/facebook/react)
+
+#### Multiple pinned repos side by side
+
+```html
+<a href="https://github.com/facebook/react">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=facebook&repo=react&theme=tokyonight" />
+</a>
+<a href="https://github.com/vuejs/vue">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=vuejs&repo=vue&theme=tokyonight" />
+</a>
+```
+
+<a href="https://github.com/facebook/react">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=facebook&repo=react&theme=tokyonight" />
+</a>
+<a href="https://github.com/vuejs/vue">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=vuejs&repo=vue&theme=tokyonight" />
+</a>
+
+### Gist Card
+
+```markdown
+[![Gist Card](https://github-readme-stats.vercel.app/api/gist?id=bbfce31e0217a3689c8d961a356cb10d&theme=radical)](https://gist.github.com/Yizack/bbfce31e0217a3689c8d961a356cb10d)
+```
+
+### GitHub Streak Stats
+
+From [github-readme-streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats):
+
+```markdown
+[![GitHub Streak](https://streak-stats.demolab.com/?user=octocat&theme=radical)](https://git.io/streak-stats)
+```
+
+[![GitHub Streak](https://streak-stats.demolab.com/?user=octocat&theme=radical)](https://git.io/streak-stats)
+
+#### Streak stats options
+
+```markdown
+<!-- Different themes -->
+[![GitHub Streak](https://streak-stats.demolab.com/?user=octocat&theme=dark)](https://git.io/streak-stats)
+[![GitHub Streak](https://streak-stats.demolab.com/?user=octocat&theme=highcontrast)](https://git.io/streak-stats)
+
+<!-- Date format -->
+[![GitHub Streak](https://streak-stats.demolab.com/?user=octocat&date_format=M%20j%5B%2C%20Y%5D)](https://git.io/streak-stats)
+
+<!-- Hide border -->
+[![GitHub Streak](https://streak-stats.demolab.com/?user=octocat&hide_border=true)](https://git.io/streak-stats)
+
+<!-- Custom border radius -->
+[![GitHub Streak](https://streak-stats.demolab.com/?user=octocat&border_radius=10)](https://git.io/streak-stats)
+```
+
+### GitHub Profile Trophy
+
+From [github-profile-trophy](https://github.com/ryo-ma/github-profile-trophy):
+
+```markdown
+[![trophy](https://github-profile-trophy.vercel.app/?username=octocat&theme=radical)](https://github.com/ryo-ma/github-profile-trophy)
+```
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=octocat&theme=radical)](https://github.com/ryo-ma/github-profile-trophy)
+
+#### Trophy options
+
+```markdown
+<!-- Single row -->
+[![trophy](https://github-profile-trophy.vercel.app/?username=octocat&row=1)](https://github.com/ryo-ma/github-profile-trophy)
+
+<!-- Specific trophies only -->
+[![trophy](https://github-profile-trophy.vercel.app/?username=octocat&title=Stars,Followers,Commits)](https://github.com/ryo-ma/github-profile-trophy)
+
+<!-- No frame -->
+[![trophy](https://github-profile-trophy.vercel.app/?username=octocat&no-frame=true)](https://github.com/ryo-ma/github-profile-trophy)
+
+<!-- Column count -->
+[![trophy](https://github-profile-trophy.vercel.app/?username=octocat&column=3)](https://github.com/ryo-ma/github-profile-trophy)
+
+<!-- Themes: flat, onedark, gruvbox, dracula, monokai, chalk, nord, alduin, darkhub, juicyfresh, buddhism, oldie, radical, onestar, discord, algolia, gitdimmed, tokyonight, matrix, apprentice, dark_dimmed, dark_lover -->
+[![trophy](https://github-profile-trophy.vercel.app/?username=octocat&theme=onestar)](https://github.com/ryo-ma/github-profile-trophy)
+```
+
+### GitHub Activity Graph
+
+From [github-readme-activity-graph](https://github.com/Ashutosh00710/github-readme-activity-graph):
+
+```markdown
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=octocat&theme=react-dark)](https://github.com/ashutosh00710/github-readme-activity-graph)
+```
+
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=octocat&theme=react-dark)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
+#### Activity graph themes
+
+```markdown
+<!-- Themes: github, github-compact, react, react-dark, rogue, merko, gruvbox, tokyo-night, dracula, monokai, coral, alto, high-contrast, github-dark, github-light, xcode, lucent -->
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=octocat&theme=tokyo-night)](https://github.com/ashutosh00710/github-readme-activity-graph)
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=octocat&theme=dracula)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
+<!-- Custom colors -->
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=octocat&bg_color=0d1117&color=58a6ff&line=1f6feb&point=58a6ff&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
+<!-- With area fill -->
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=octocat&theme=react-dark&area=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+```
+
+### Contribution Snake Animation
+
+From [snk](https://github.com/Platane/snk) (requires GitHub Actions setup):
+
+```markdown
+![Snake animation](https://raw.githubusercontent.com/username/username/output/github-contribution-grid-snake-dark.svg#gh-dark-mode-only)
+![Snake animation](https://raw.githubusercontent.com/username/username/output/github-contribution-grid-snake.svg#gh-light-mode-only)
+```
+
+GitHub Actions workflow to generate the snake:
+
+```yaml
+# .github/workflows/snake.yml
+name: Generate Snake
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+      - uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+### Typing SVG
+
+From [readme-typing-svg](https://github.com/DenverCoder1/readme-typing-svg):
+
+```markdown
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F7F7F7&width=435&lines=Full+Stack+Developer;Open+Source+Contributor;Always+learning+new+things)](https://git.io/typing-svg)
+```
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F7F7F7&width=435&lines=Full+Stack+Developer;Open+Source+Contributor;Always+learning+new+things)](https://git.io/typing-svg)
+
+#### Typing SVG options
+
+```markdown
+<!-- Centered, with duration and pause -->
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=500&color=36BCF7&center=true&vCenter=true&width=500&lines=Hello+World!;Welcome+to+my+profile;I+love+coding)](https://git.io/typing-svg)
+
+<!-- Multiline with different speeds -->
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=30&pause=1000&color=F75C7E&width=600&height=70&lines=Software+Engineer+%F0%9F%92%BB;DevOps+Enthusiast+%F0%9F%9A%80;Open+Source+Lover+%E2%9D%A4%EF%B8%8F)](https://git.io/typing-svg)
+```
+
+### Capsule Render (Header/Footer Banners)
+
+From [capsule-render](https://github.com/kyechan99/capsule-render):
+
+```markdown
+![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Hello%20World&fontSize=80&fontAlignY=35&animation=twinkling)
+```
+
+![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Hello%20World&fontSize=80&fontAlignY=35&animation=twinkling)
+
+#### Capsule render types
+
+```markdown
+<!-- Wave -->
+![Wave](https://capsule-render.vercel.app/api?type=wave&color=auto&height=150&section=header&text=Wave&fontSize=50)
+
+<!-- Egg -->
+![Egg](https://capsule-render.vercel.app/api?type=egg&color=auto&height=150&section=header&text=Egg&fontSize=50)
+
+<!-- Shark -->
+![Shark](https://capsule-render.vercel.app/api?type=shark&color=auto&height=150&section=header&text=Shark&fontSize=50)
+
+<!-- Slice -->
+![Slice](https://capsule-render.vercel.app/api?type=slice&color=auto&height=150&section=header&text=Slice&fontSize=50)
+
+<!-- Rect -->
+![Rect](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=100&section=header&text=Rectangle&fontSize=40)
+
+<!-- Soft -->
+![Soft](https://capsule-render.vercel.app/api?type=soft&color=auto&height=100&section=header&text=Soft&fontSize=40)
+
+<!-- Cylinder -->
+![Cylinder](https://capsule-render.vercel.app/api?type=cylinder&color=auto&height=150&section=header&text=Cylinder&fontSize=50)
+
+<!-- Rounded -->
+![Rounded](https://capsule-render.vercel.app/api?type=rounded&color=timeGradient&height=120&section=header&text=Rounded&fontSize=40)
+
+<!-- Animations: fadeIn, scaleIn, blink, blinking, twinkling -->
+![Animated](https://capsule-render.vercel.app/api?type=waving&color=0:ee7752,100:e73c7e&height=150&section=header&text=Animated&fontSize=50&animation=fadeIn)
+
+<!-- Footer -->
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer)
+```
+
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer)
+
+### Skill Icons
+
+From [skill-icons](https://github.com/tandpfun/skill-icons):
+
+```markdown
+[![My Skills](https://skillicons.dev/icons?i=js,ts,react,nextjs,nodejs,python,go,rust,docker,kubernetes,aws,gcp)](https://skillicons.dev)
+```
+
+[![My Skills](https://skillicons.dev/icons?i=js,ts,react,nextjs,nodejs,python,go,rust,docker,kubernetes,aws,gcp)](https://skillicons.dev)
+
+#### Skill icons options
+
+```markdown
+<!-- Dark theme -->
+[![My Skills](https://skillicons.dev/icons?i=js,ts,react,vue,angular&theme=dark)](https://skillicons.dev)
+
+<!-- Light theme -->
+[![My Skills](https://skillicons.dev/icons?i=js,ts,react,vue,angular&theme=light)](https://skillicons.dev)
+
+<!-- Per row count -->
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,ts,react,vue,angular,svelte,nextjs,nuxt,gatsby,astro&perline=6)](https://skillicons.dev)
+
+<!-- Full icon list: ableton, activitypub, actix, adonis, ae, aiscript, alpinejs, anaconda, androidstudio, angular, ansible, apollo, appwrite, arduino, astro, atom, autocad, aws, azul, azure, babel, bash, bevy, bitbucket, blender, bootstrap, bsd, bun, c, cs, cpp, crystal, cassandra, cloudflare, cmake, codepen, coffeescript, css, cypress, d3, dart, deno, devto, discord, bots, django, docker, dotnet, dynamodb, eclipse, elasticsearch, electron, elixir, emacs, ember, express, fastapi, fediverse, figma, firebase, flask, flutter, forth, fortran, gamemakerstudio, gatsby, gcp, git, github, githubactions, gitlab, gmail, gherkin, go, gradle, godot, grafana, graphql, gtk, gulp, haskell, haxe, heroku, hibernate, html, htmx, idea, ai, instagram, ipfs, java, js, jenkins, jest, jquery, kafka, kali, kotlin, ktor, kubernetes, laravel, latex, less, linkedin, linux, lit, lua, md, mastodon, materialui, matlab, maven, mint, misskey, mongodb, mysql, neovim, nestjs, netlify, nextjs, nginx, nim, nix, nodejs, notion, npm, nuxt, obsidian, ocaml, octave, opencv, openshift, openstack, p5js, perl, ps, php, pinia, plan9, planetscale, pnpm, postgres, postman, powershell, pr, prisma, processing, prometheus, pug, py, pytorch, qt, r, rabbitmq, rails, raspberrypi, react, reactivex, redis, redux, regex, remix, replit, rider, robloxstudio, rocket, rollupjs, ros, ruby, rust, sass, spring, sqlite, stackoverflow, styledcomponents, supabase, scala, sklearn, solidity, solidjs, svelte, svg, swift, symfony, tailwind, tauri, tensorflow, terraform, threejs, twitter, ts, ubuntu, unity, unreal, v, vala, vercel, vim, visualstudio, vite, vitest, vscode, vscodium, vue, vuetify, wasm, webflow, webpack, windicss, wordpress, workers, xd, yarn, zig -->
+```
+
+### Socialify (Project Social Image)
+
+From [socialify](https://github.com/wei/socialify):
+
+```markdown
+[![Socialify](https://socialify.git.ci/facebook/react/image?description=1&font=Inter&forks=1&issues=1&language=1&logo=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fa%2Fa7%2FReact-icon.svg&name=1&owner=1&pattern=Plus&pulls=1&stargazers=1&theme=Dark)](https://socialify.git.ci)
+```
+
+[![Socialify](https://socialify.git.ci/facebook/react/image?description=1&font=Inter&forks=1&issues=1&language=1&logo=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fa%2Fa7%2FReact-icon.svg&name=1&owner=1&pattern=Plus&pulls=1&stargazers=1&theme=Dark)](https://socialify.git.ci)
+
+#### Socialify patterns
+
+```markdown
+<!-- Patterns: Signal, Charlie Brown, Formal Invitation, Plus, Circuit Board, Overlapping Hexagons, Brick Wall, Floating Cogs, Diagonal Stripes, Solid -->
+<!-- Fonts: Inter, Bitter, Raleway, Rokkitt, Source Code Pro, KoHo, Jost -->
+```
+
+### Repobeats Analytics
+
+From [repobeats](https://repobeats.axiom.co):
+
+```markdown
+[![Repobeats analytics](https://repobeats.axiom.co/api/embed/your-hash-here.svg "Repobeats analytics image")](https://repobeats.axiom.co)
+```
+
+### Visitor / Profile View Counter
+
+```markdown
+<!-- visitor-badge -->
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=username.repo)
+
+<!-- hits counter -->
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fusername%2Frepo&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+
+<!-- komarev profile views -->
+![Profile Views](https://komarev.com/ghpvc/?username=octocat&color=blue)
+
+<!-- komarev with options -->
+![Profile Views](https://komarev.com/ghpvc/?username=octocat&label=Profile%20views&color=0e75b6&style=flat)
+```
+
+![Profile Views](https://komarev.com/ghpvc/?username=octocat&color=blue)
+
+### Wakatime Stats
+
+```markdown
+[![Wakatime Stats](https://github-readme-stats.vercel.app/api/wakatime?username=octocat&theme=radical)](https://wakatime.com/@octocat)
+
+<!-- Compact layout -->
+[![Wakatime Stats](https://github-readme-stats.vercel.app/api/wakatime?username=octocat&layout=compact&theme=radical)](https://wakatime.com/@octocat)
+```
+
+### GitHub Readme Jokes
+
+From [readme-jokes](https://github.com/ABSphreak/readme-jokes):
+
+```markdown
+[![Jokes Card](https://readme-jokes.vercel.app/api?theme=radical)](https://github.com/ABSphreak/readme-jokes)
+```
+
+### GitHub Readme Quotes
+
+From [github-readme-quotes](https://github.com/PiyushSuthar/github-readme-quotes):
+
+```markdown
+[![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)](https://github.com/piyushsuthar/github-readme-quotes)
+
+<!-- Vertical layout -->
+[![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=vertical&theme=dark)](https://github.com/piyushsuthar/github-readme-quotes)
+```
+
+### GitHub Contributors Image
+
+From [contrib.rocks](https://contrib.rocks):
+
+```markdown
+[![Contributors](https://contrib.rocks/image?repo=facebook/react)](https://github.com/facebook/react/graphs/contributors)
+
+<!-- Max contributors and columns -->
+[![Contributors](https://contrib.rocks/image?repo=facebook/react&max=100&columns=12)](https://github.com/facebook/react/graphs/contributors)
+```
+
+[![Contributors](https://contrib.rocks/image?repo=facebook/react)](https://github.com/facebook/react/graphs/contributors)
+
+### GitHub Metrics (Lowlighter)
+
+From [metrics](https://github.com/lowlighter/metrics) — extremely customizable, requires GitHub Actions:
+
+```markdown
+![Metrics](https://metrics.lecoq.io/octocat?template=classic&config.timezone=America%2FNew_York)
+```
+
+This supports dozens of plugins: achievements, languages, stars, habits, isometric calendar, wakatime, music, tweets, and much more.
+
+### GitHub Socialify Banner
+
+Quick way to generate project cards for social sharing:
+
+```
+https://socialify.git.ci/{owner}/{repo}/image?description=1&font=Inter&language=1&name=1&owner=1&theme=Dark
+```
+
+### Readme Stats Combo (Side by Side)
+
+```html
+<p align="center">
+  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=octocat&show_icons=true&theme=tokyonight" />
+  <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=octocat&layout=compact&theme=tokyonight" />
+</p>
+```
+
+<p align="center">
+  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=octocat&show_icons=true&theme=tokyonight" />
+  <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=octocat&layout=compact&theme=tokyonight" />
+</p>
+
+### Full Profile README Example Layout
+
+```html
+<div align="center">
+
+  ![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Your%20Name&fontSize=80&fontAlignY=35)
+
+  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=Full+Stack+Developer;Open+Source+Contributor)](https://git.io/typing-svg)
+
+  [![My Skills](https://skillicons.dev/icons?i=js,ts,react,nodejs,python,docker,aws,kubernetes&perline=8)](https://skillicons.dev)
+
+  ---
+
+  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=octocat&show_icons=true&theme=tokyonight" />
+  <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=octocat&layout=compact&theme=tokyonight" />
+
+  [![GitHub Streak](https://streak-stats.demolab.com/?user=octocat&theme=tokyonight)](https://git.io/streak-stats)
+
+  [![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=octocat&theme=tokyo-night)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
+  ![Footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer)
+
+</div>
+```
 
 ---
 
