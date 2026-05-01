@@ -1,5 +1,7 @@
 # The Complete GitHub Markdown Reference
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/n-at-han-k/github-readme-example)
+
 > Every single GitHub Flavored Markdown (GFM) feature in one file. Copy and paste freely.
 
 ---
